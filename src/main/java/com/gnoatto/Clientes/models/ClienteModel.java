@@ -9,7 +9,11 @@ public class ClienteModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nome_cliente")
     private String nome;
+
+    @Column(name = "email_cliente")
     private String email;
     private String telefone;
 
